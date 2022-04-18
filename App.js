@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+
+import Authnavigator from "./app/navigation/AuthNavigator";
+import User_Homescreen from "./app/screens/User_Homescreen";
+import User_buy from "./app/screens/User_buy";
+import trialpage from "./app/screens/trialpage";
+
+
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+        <trialpage/>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+/*
+export default function App() {
+  return (
+    <User_Homescreen/>
+  );
+}
+
+<NavigationContainer>
+<Authnavigator />
+</NavigationContainer>
+*/
